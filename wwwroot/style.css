@@ -1,0 +1,114 @@
+/* Start with a base styling and background image */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    transition: background-image 0.5s ease-in-out; /* For smooth background change */
+}
+
+/* Main container to center content */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+}
+
+#engine-name {
+    font-size: 4rem;
+    cursor: pointer; /* Makes it obvious you can click it */
+    user-select: none; /* Prevents text selection on click */
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+#query {
+    width: 70%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* General button styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+#search-btn {
+    border-radius: 0 20px 20px 0;
+}
+
+#lucky-btn {
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+#time-btn {
+    border-radius: 20px;
+    background-color: #555;
+}
+#time-btn:hover {
+    background-color: #333;
+}
+
+
+/* Hide results and time divs initially */
+#searchResults, #time {
+    visibility: hidden;
+}
+
+/* Styling for the search results */
+#searchResults {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 8px;
+}
+
+.result-item {
+    margin-bottom: 25px;
+}
+
+.result-item a {
+    font-size: 1.2rem;
+    color: #1a0dab;
+    text-decoration: none;
+}
+.result-item a:hover {
+    text-decoration: underline;
+}
+.result-item .link {
+    font-size: 0.9rem;
+    color: #006621;
+}
+.result-item .snippet {
+    color: #545454;
+}
