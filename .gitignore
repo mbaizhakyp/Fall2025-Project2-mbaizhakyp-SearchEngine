@@ -1,0 +1,54 @@
+# Mac OS specific
+.DS_Store
+._*
+
+# Visual Studio Code specific
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# .NET Core build artifacts
+bin/
+obj/
+
+# User-specific files
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]uild/
+[Bb]uild[Ss]ystem/
+[Tt]est[Rr]esult*/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+# The packages folder can be ignored because of package restore
+**/[Pp]ackages/*
+# except build/, which is used as an MSBuild target.
+!**/[Pp]ackages/build/
+
+# Client-side dependency files
+node_modules/
+jspm_packages/
+lib/
+
+# Log files
+*.log
+*.log.*
+
+# Dotnet secret files
+secrets.json
