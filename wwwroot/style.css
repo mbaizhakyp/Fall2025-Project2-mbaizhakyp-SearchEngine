@@ -80,7 +80,7 @@ button:hover {
 
 /* Hide results and time divs initially */
 #searchResults, #time {
-    visibility: hidden;
+    visibility: none;
 }
 
 /* Styling for the search results */
